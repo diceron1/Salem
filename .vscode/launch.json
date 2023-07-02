@@ -1,0 +1,152 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch TheWitchTrials (Debug)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "TheWitchTrials Win64 Debug Build",
+			"args": [
+			],
+			"cwd": "E:\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "E:\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch TheWitchTrials (DebugGame)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "TheWitchTrials Win64 DebugGame Build",
+			"args": [
+			],
+			"cwd": "E:\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "E:\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch TheWitchTrials (Development)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "TheWitchTrials Win64 Development Build",
+			"args": [
+			],
+			"cwd": "E:\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "E:\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch TheWitchTrials (Test)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "TheWitchTrials Win64 Test Build",
+			"args": [
+			],
+			"cwd": "E:\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "E:\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch TheWitchTrials (Shipping)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "TheWitchTrials Win64 Shipping Build",
+			"args": [
+			],
+			"cwd": "E:\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "E:\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch TheWitchTrialsEditor (Debug)",
+			"request": "launch",
+			"program": "E:\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+			"preLaunchTask": "TheWitchTrialsEditor Win64 Debug Build",
+			"args": [
+				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject"
+			],
+			"cwd": "E:\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "E:\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch TheWitchTrialsEditor (DebugGame)",
+			"request": "launch",
+			"program": "E:\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+			"preLaunchTask": "TheWitchTrialsEditor Win64 DebugGame Build",
+			"args": [
+				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject"
+			],
+			"cwd": "E:\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "E:\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch TheWitchTrialsEditor (Development)",
+			"request": "launch",
+			"program": "E:\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"preLaunchTask": "TheWitchTrialsEditor Win64 Development Build",
+			"args": [
+				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject"
+			],
+			"cwd": "E:\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "E:\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "E:\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "E:\\Epic Games\\UE_5.0\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "externalTerminal",
+			"stopAtEntry": false,
+			"cwd": "E:\\Epic Games\\UE_5.0"
+		}
+	]
+}
