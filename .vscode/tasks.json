@@ -9,7 +9,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Debug",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -26,7 +26,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Debug",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -46,7 +46,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Debug",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -63,7 +63,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"DebugGame",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -80,7 +80,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"DebugGame",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -100,7 +100,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"DebugGame",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -117,7 +117,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Development",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -134,7 +134,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Development",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -154,7 +154,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Development",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -171,7 +171,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Test",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -188,7 +188,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Test",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -208,7 +208,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Test",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -225,7 +225,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Shipping",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -242,7 +242,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Shipping",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -262,7 +262,7 @@
 				"TheWitchTrials",
 				"Win64",
 				"Shipping",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -279,7 +279,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"Debug",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -296,7 +296,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"Debug",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -316,7 +316,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"Debug",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -333,7 +333,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"DebugGame",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -350,7 +350,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"DebugGame",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -370,7 +370,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"DebugGame",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -387,7 +387,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"Development",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -404,7 +404,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"Development",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -424,7 +424,7 @@
 				"TheWitchTrialsEditor",
 				"Win64",
 				"Development",
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",

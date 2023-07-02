@@ -1,67 +1,117 @@
 [
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrials.Build.cs",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\BTService_PlayerLocation.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrials.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\BTService_PlayerLocation.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrials.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\BTTask_Shoot.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrialsCharacter.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\BTTask_Shoot.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrialsCharacter.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\MyPawn.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrialsGameMode.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\MyPawn.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrialsGameMode.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\ShooterAIController.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrialsProjectile.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\ShooterAIController.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TheWitchTrialsProjectile.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\ShooterCharacter.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TP_PickUpComponent.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\ShooterCharacter.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TP_PickUpComponent.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrials.Build.cs",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TP_WeaponComponent.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrials.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\TheWitchTrials\\Source\\TheWitchTrials\\TP_WeaponComponent.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrials.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrialsCharacter.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrialsCharacter.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrialsGameMode.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrialsGameMode.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrialsProjectile.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TheWitchTrialsProjectile.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TP_PickUpComponent.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TP_PickUpComponent.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TP_WeaponComponent.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
+		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Source\\TheWitchTrials\\TP_WeaponComponent.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default\\TheWitchTrials.211.rsp\"",
 		"directory": "E:\\Epic Games\\UE_5.0\\Engine\\Source"
 	}
 ]

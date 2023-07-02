@@ -4,7 +4,7 @@
 		{
 			"name": "Launch TheWitchTrials (Debug)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
 			"preLaunchTask": "TheWitchTrials Win64 Debug Build",
 			"args": [
 			],
@@ -20,7 +20,7 @@
 		{
 			"name": "Launch TheWitchTrials (DebugGame)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
 			"preLaunchTask": "TheWitchTrials Win64 DebugGame Build",
 			"args": [
 			],
@@ -36,7 +36,7 @@
 		{
 			"name": "Launch TheWitchTrials (Development)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame.exe",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Binaries\\Win64\\UnrealGame.exe",
 			"preLaunchTask": "TheWitchTrials Win64 Development Build",
 			"args": [
 			],
@@ -52,7 +52,7 @@
 		{
 			"name": "Launch TheWitchTrials (Test)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
 			"preLaunchTask": "TheWitchTrials Win64 Test Build",
 			"args": [
 			],
@@ -68,7 +68,7 @@
 		{
 			"name": "Launch TheWitchTrials (Shipping)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\TheWitchTrials\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"program": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
 			"preLaunchTask": "TheWitchTrials Win64 Shipping Build",
 			"args": [
 			],
@@ -87,7 +87,7 @@
 			"program": "E:\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
 			"preLaunchTask": "TheWitchTrialsEditor Win64 Debug Build",
 			"args": [
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject"
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject"
 			],
 			"cwd": "E:\\Epic Games\\UE_5.0",
 			"stopAtEntry": false,
@@ -104,7 +104,7 @@
 			"program": "E:\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
 			"preLaunchTask": "TheWitchTrialsEditor Win64 DebugGame Build",
 			"args": [
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject"
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject"
 			],
 			"cwd": "E:\\Epic Games\\UE_5.0",
 			"stopAtEntry": false,
@@ -121,7 +121,7 @@
 			"program": "E:\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
 			"preLaunchTask": "TheWitchTrialsEditor Win64 Development Build",
 			"args": [
-				"D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject"
+				"D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject"
 			],
 			"cwd": "E:\\Epic Games\\UE_5.0",
 			"stopAtEntry": false,
@@ -140,7 +140,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=D:\\Unreal Projects\\TheWitchTrials\\TheWitchTrials.uproject",
+				"-project=D:\\Unreal Projects\\TheWitchTrials\\Salem\\TheWitchTrials.uproject",
 				"-game",
 				"-engine"
 			],
