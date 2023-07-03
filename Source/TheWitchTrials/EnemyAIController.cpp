@@ -14,7 +14,18 @@ void AEnemyAIController::BeginPlay()
     //Pawn
     APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 
-
     //focus
     SetFocus(PlayerPawn);
+
+    
+}
+
+void AEnemyAIController::Tick(float DeltaSeconds)
+{
+    Super::Tick(DeltaSeconds);
+    
+    APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+
+    //MoveTo Player
+    MoveToActor(PlayerPawn, 300, false);
 }
