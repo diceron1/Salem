@@ -1,14 +1,22 @@
 {
-    "configurations": [
-        {
-            "name": "TheWitchTrialsEditor Editor Win64 Development (TheWitchTrials)",
+	"configurations": [
+		{
+			"name": "TheWitchTrialsEditor Editor Win64 Development (TheWitchTrials)",
+			"compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_TheWitchTrials.json"
+            "configurationProvider": "epic.ue",
+            "compileCommands": "E:\\Epic Games\\UE_5.2\\.vscode\\compileCommands_BoomStick.json"
         },
         {
             "name": "Win32",
+            "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "D:\\Unreal Projects\\TheWitchTrials\\Salem\\.vscode\\compileCommands_Default.json"
+            "configurationProvider": "epic.ue",
+            "compileCommands": "E:\\Epic Games\\UE_5.2\\.vscode\\compileCommands_Default.json"
         }
     ],
     "version": 4
