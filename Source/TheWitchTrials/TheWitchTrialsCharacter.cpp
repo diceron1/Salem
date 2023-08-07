@@ -38,6 +38,15 @@ ATheWitchTrialsCharacter::ATheWitchTrialsCharacter()
 	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
 
+	// Create a mesh component that will be used when other players see this player, or to cast shadows
+	/*Mesh3P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh3P"));
+	Mesh3P->SetOwnerNoSee(true);
+	Mesh3P->SetupAttachment(GetCapsuleComponent());
+	Mesh3P->SetRelativeRotation(FRotator(0, 0, 270.0f));
+	Mesh3P->SetRelativeLocation(FVector(0, 0, -97.0f));*/
+
+	
+
 }
 
 void ATheWitchTrialsCharacter::BeginPlay()
