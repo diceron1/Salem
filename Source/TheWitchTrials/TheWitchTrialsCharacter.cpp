@@ -17,6 +17,9 @@ ATheWitchTrialsCharacter::ATheWitchTrialsCharacter()
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
 
+	//Set up jump count for double Jump
+	JumpMaxCount = 2;
+
 	// set our turn rates for input
 	TurnRateGamepad = 45.f;
 
@@ -55,15 +58,14 @@ void ATheWitchTrialsCharacter::SetupPlayerInputComponent(class UInputComponent* 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	// Bind fire event
+	// Bind fire events
 	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnPrimaryAction);
-
-	// Enable touchscreen input
-	EnableTouchscreenMovement(PlayerInputComponent);
+	PlayerInputComponent->BindAction("SecondaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnSecondaryAction);
 
 	// Bind movement events
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &ATheWitchTrialsCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("Move Right / Left", this, &ATheWitchTrialsCharacter::MoveRight);
+	PlayerInputComponent->BindAxis("Sprint", this, &ATheWitchTrialsCharacter::Sprint);
 
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "Mouse" versions handle devices that provide an absolute delta, such as a mouse.
@@ -76,33 +78,19 @@ void ATheWitchTrialsCharacter::SetupPlayerInputComponent(class UInputComponent* 
 
 void ATheWitchTrialsCharacter::OnPrimaryAction()
 {
-	// Trigger the OnItemUsed Event
-	OnUseItem.Broadcast();
+	//Trigger the OnItemUsed Event
+	//Get Forward Vector
+	//Spawn Jay's Fire VFX
+	//Line Trace camera forward vector, get item hit
+	//Apply damage if it is an enemy
 }
 
-void ATheWitchTrialsCharacter::BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
+void ATheWitchTrialsCharacter::OnSecondaryAction()
 {
-	if (TouchItem.bIsPressed == true)
-	{
-		return;
-	}
-	if ((FingerIndex == TouchItem.FingerIndex) && (TouchItem.bMoved == false))
-	{
-		OnPrimaryAction();
-	}
-	TouchItem.bIsPressed = true;
-	TouchItem.FingerIndex = FingerIndex;
-	TouchItem.Location = Location;
-	TouchItem.bMoved = false;
-}
-
-void ATheWitchTrialsCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	if (TouchItem.bIsPressed == false)
-	{
-		return;
-	}
-	TouchItem.bIsPressed = false;
+	//Pull Up rock defense VFX
+	//Get player forward vector
+	//Calculate how far ahead of the player the wall should be
+	//Use Collision from Jay's vfx to deflect enemy projectiles and disrupt thier path. 
 }
 
 void ATheWitchTrialsCharacter::MoveForward(float Value)
@@ -135,15 +123,18 @@ void ATheWitchTrialsCharacter::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
 }
 
-bool ATheWitchTrialsCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
+void ATheWitchTrialsCharacter::Sprint(float Rate)
 {
-	if (FPlatformMisc::SupportsTouchInput() || GetDefault<UInputSettings>()->bUseMouseForTouch)
+	if(Rate >= 1.0f)
 	{
-		PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &ATheWitchTrialsCharacter::BeginTouch);
-		PlayerInputComponent->BindTouch(EInputEvent::IE_Released, this, &ATheWitchTrialsCharacter::EndTouch);
-
-		return true;
+		UE_LOG(LogTemp, Warning, TEXT("SPRINT"));
+		GetCharacterMovement()->MaxWalkSpeed = 1200.f;
+	}
+	else
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 600.f;
 	}
 	
-	return false;
 }
+
+
