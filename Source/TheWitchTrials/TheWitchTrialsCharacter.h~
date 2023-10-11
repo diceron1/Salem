@@ -13,7 +13,6 @@ class USceneComponent;
 class UCameraComponent;
 class UAnimMontage;
 class USoundBase;
-class UNiagaraSystem;
 
 // Declaration of the delegate that will be called when the Primary Action is triggered
 // It is declared as dynamic so it can be accessed also in Blueprints
@@ -42,12 +41,7 @@ public:
 	ATheWitchTrialsCharacter();
 
 protected:
-	virtual void BeginPlay() override;
-
-	
-
-	UPROPERTY(EditDefaultsOnly, Category = "VFX")
-	UNiagaraSystem* NS_Jump;
+	virtual void BeginPlay();
 
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
@@ -60,10 +54,10 @@ public:
 protected:
 	
 	/** Fires primary projectile. */
-	static void OnPrimaryAction();
+	void OnPrimaryAction();
 
 	/** Fires Secondary Projectile. */
-	static void OnSecondaryAction();
+	void OnSecondaryAction();
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
@@ -73,8 +67,6 @@ protected:
 
 	/** Handles Sprint*/
 	void Sprint(float Val);
-
-	void StopJumping() override;
 
 	/**
 	 * Called via input to turn at a given rate.
@@ -88,13 +80,16 @@ protected:
 	 */
 	void LookUpAtRate(float Rate);
 	
+protected:
 	// APawn interface
-	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
+	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 	// End of APawn interface
 
-	public:
+public:
 	/** Returns Mesh1P subobject **/
 	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
 	/** Returns FirstPersonCameraComponent subobject **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
+
 };
+

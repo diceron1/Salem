@@ -1,12 +1,10 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "TheWitchTrialsCharacter.h"
-#include "TheWitchTrialsProjectile.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
-#include "GameFramework/InputSettings.h"
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -58,18 +56,18 @@ void ATheWitchTrialsCharacter::BeginPlay()
 
 //////////////////////////////////////////////////////////////////////////// Input
 
-void ATheWitchTrialsCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+void ATheWitchTrialsCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
 
 	// Bind jump events
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ATheWitchTrialsCharacter::StopJumping);
 
 	// Bind fire events
-	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnPrimaryAction);
-	PlayerInputComponent->BindAction("SecondaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnSecondaryAction);
+	//PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnPrimaryAction);
+	//PlayerInputComponent->BindAction("SecondaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnSecondaryAction);
 
 	// Bind movement events
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &ATheWitchTrialsCharacter::MoveForward);
@@ -99,7 +97,7 @@ void ATheWitchTrialsCharacter::OnSecondaryAction()
 	//Pull Up rock defense VFX
 	//Get player forward vector
 	//Calculate how far ahead of the player the wall should be
-	//Use Collision from Jay's vfx to deflect enemy projectiles and disrupt thier path. 
+	//Use Collision from Jay's vfx to deflect enemy projectiles and disrupt their path. 
 }
 
 void ATheWitchTrialsCharacter::MoveForward(float Value)
@@ -146,4 +144,7 @@ void ATheWitchTrialsCharacter::Sprint(float Rate)
 	
 }
 
-
+void ATheWitchTrialsCharacter::StopJumping()
+{
+	JumpCurrentCount = 0;
+}

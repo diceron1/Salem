@@ -13,6 +13,30 @@ class ATheWitchTrialsGameMode : public AGameModeBase
 
 public:
 	ATheWitchTrialsGameMode();
+
+	void ActorDied(AActor* DeadActor);
+	
+	void BeginPlay();
+
+protected:
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void StartGame();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void RoundWon(bool bRoundWon);
+
+private:
+
+	//Get Witch (Player) class
+	class ATheWitchTrialsCharacter* Witch;
+
+	float StartDelay = 3.f;
+
+	void HandleGameStart();
+
+	int32 TargetEnemies = 0;
+	int32 GetTargetEnemyCount();
 };
 
 
