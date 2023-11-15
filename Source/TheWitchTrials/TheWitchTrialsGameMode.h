@@ -18,6 +18,8 @@ public:
 	
 	void BeginPlay();
 
+	
+
 protected:
 
 	UFUNCTION(BlueprintImplementableEvent)
@@ -26,15 +28,31 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent)
 	void RoundWon(bool bRoundWon);
 
-private:
+	UFUNCTION(BlueprintCallable)
+	int CalculateEnemyCount(int Enemies);
 
+	UPROPERTY(EditAnywhere, Category = "C++")
+	TSubclassOf<AEnemyAI> Enemy;
+	
+	int PreviousRoundEnemyStartCount = 0;
+
+private:
+	
 	//Get Witch (Player) class
 	class ATheWitchTrialsCharacter* Witch;
+	//Get Enemy Class 
+	class AEnemyAI* Enemy;
 
 	float StartDelay = 3.f;
 
 	void HandleGameStart();
+	void SpawnEnemies();
 
+	int SpawnCount = 3;
+	
+	int PreviousRound = 0;
+	FVector Location = FVector(400.f, 400.f, 300.f);
+	
 	int32 TargetEnemies = 0;
 	int32 GetTargetEnemyCount();
 };

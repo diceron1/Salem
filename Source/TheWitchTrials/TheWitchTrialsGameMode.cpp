@@ -4,6 +4,8 @@
 #include "TheWitchTrialsCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 #include "EnemyAI.h"
+#include "K2Node_SpawnActorFromClass.h"
+#include "Algo/ForEach.h"
 #include "Kismet/GameplayStatics.h"
 
 
@@ -29,6 +31,7 @@ void ATheWitchTrialsGameMode::ActorDied(AActor* DeadActor)
 		if(TargetEnemies == 0)
 		{
 			RoundWon(true);
+			SpawnEnemies();
 		}
 	}
 }
@@ -37,6 +40,7 @@ void ATheWitchTrialsGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 	HandleGameStart();
+	SpawnEnemies();
 }
 
 void ATheWitchTrialsGameMode::HandleGameStart()
@@ -49,10 +53,41 @@ void ATheWitchTrialsGameMode::HandleGameStart()
 	//Add Player Controller code for Downed State
 }
 
+void ATheWitchTrialsGameMode::SpawnEnemies()
+{
+	if(PreviousRound <= 0)
+	{
+		
+		for(int i = 0; i < SpawnCount; i++)
+		{
+			GetWorld()->SpawnActor<AEnemyAI>(Location, FRotator(0.f));
+			UE_LOG(LogTemp, Warning, TEXT("ENEMY: /i"), i);
+		}
+		
+	}
+	else
+	{
+		SpawnCount = PreviousRoundEnemyStartCount + 3;
+		for(int i = 0; i < SpawnCount; i++)
+		{
+			GetWorld()->SpawnActor<Enemy>(Location, FRotator(0.f));
+			UE_LOG(LogTemp, Warning, TEXT("ENEMY: /i"), i);
+		}
+	}
+}
+
 int32 ATheWitchTrialsGameMode::GetTargetEnemyCount()
 {
 	TArray<AActor*> Enemies;
 	UGameplayStatics::GetAllActorsOfClass(this,AEnemyAI::StaticClass(), Enemies);
 	return Enemies.Num();
 }
+
+int ATheWitchTrialsGameMode::CalculateEnemyCount(int Enemies)
+{
+	PreviousRoundEnemyStartCount = Enemies;
+
+	return Enemies;
+}
+
 

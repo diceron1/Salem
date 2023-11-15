@@ -23,6 +23,7 @@ protected:
 private:
 	UPROPERTY(EditAnywhere)
 	float MaxHealth = 100.f;
+	
 	float Health = 0.f;
 
 	UFUNCTION()
