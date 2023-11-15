@@ -1,12 +1,10 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "TheWitchTrialsCharacter.h"
-#include "TheWitchTrialsProjectile.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
-#include "GameFramework/InputSettings.h"
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -16,6 +14,9 @@ ATheWitchTrialsCharacter::ATheWitchTrialsCharacter()
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
+
+	//Set up jump count for double Jump
+	JumpMaxCount = 2;
 
 	// set our turn rates for input
 	TurnRateGamepad = 45.f;
@@ -35,6 +36,15 @@ ATheWitchTrialsCharacter::ATheWitchTrialsCharacter()
 	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
 
+	// Create a mesh component that will be used when other players see this player, or to cast shadows
+	/*Mesh3P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh3P"));
+	Mesh3P->SetOwnerNoSee(true);
+	Mesh3P->SetupAttachment(GetCapsuleComponent());
+	Mesh3P->SetRelativeRotation(FRotator(0, 0, 270.0f));
+	Mesh3P->SetRelativeLocation(FVector(0, 0, -97.0f));*/
+
+	
+
 }
 
 void ATheWitchTrialsCharacter::BeginPlay()
@@ -46,24 +56,23 @@ void ATheWitchTrialsCharacter::BeginPlay()
 
 //////////////////////////////////////////////////////////////////////////// Input
 
-void ATheWitchTrialsCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+void ATheWitchTrialsCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
 
 	// Bind jump events
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ATheWitchTrialsCharacter::StopJumping);
 
-	// Bind fire event
-	PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnPrimaryAction);
-
-	// Enable touchscreen input
-	EnableTouchscreenMovement(PlayerInputComponent);
+	// Bind fire events
+	//PlayerInputComponent->BindAction("PrimaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnPrimaryAction);
+	//PlayerInputComponent->BindAction("SecondaryAction", IE_Pressed, this, &ATheWitchTrialsCharacter::OnSecondaryAction);
 
 	// Bind movement events
 	PlayerInputComponent->BindAxis("Move Forward / Backward", this, &ATheWitchTrialsCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("Move Right / Left", this, &ATheWitchTrialsCharacter::MoveRight);
+	PlayerInputComponent->BindAxis("Sprint", this, &ATheWitchTrialsCharacter::Sprint);
 
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "Mouse" versions handle devices that provide an absolute delta, such as a mouse.
@@ -76,33 +85,19 @@ void ATheWitchTrialsCharacter::SetupPlayerInputComponent(class UInputComponent* 
 
 void ATheWitchTrialsCharacter::OnPrimaryAction()
 {
-	// Trigger the OnItemUsed Event
-	OnUseItem.Broadcast();
+	//Trigger the OnItemUsed Event
+	//Get Forward Vector
+	//Spawn Jay's Fire VFX
+	//Line Trace camera forward vector, get item hit
+	//Apply damage if it is an enemy
 }
 
-void ATheWitchTrialsCharacter::BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
+void ATheWitchTrialsCharacter::OnSecondaryAction()
 {
-	if (TouchItem.bIsPressed == true)
-	{
-		return;
-	}
-	if ((FingerIndex == TouchItem.FingerIndex) && (TouchItem.bMoved == false))
-	{
-		OnPrimaryAction();
-	}
-	TouchItem.bIsPressed = true;
-	TouchItem.FingerIndex = FingerIndex;
-	TouchItem.Location = Location;
-	TouchItem.bMoved = false;
-}
-
-void ATheWitchTrialsCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	if (TouchItem.bIsPressed == false)
-	{
-		return;
-	}
-	TouchItem.bIsPressed = false;
+	//Pull Up rock defense VFX
+	//Get player forward vector
+	//Calculate how far ahead of the player the wall should be
+	//Use Collision from Jay's vfx to deflect enemy projectiles and disrupt their path. 
 }
 
 void ATheWitchTrialsCharacter::MoveForward(float Value)
@@ -135,15 +130,21 @@ void ATheWitchTrialsCharacter::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * TurnRateGamepad * GetWorld()->GetDeltaSeconds());
 }
 
-bool ATheWitchTrialsCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
+void ATheWitchTrialsCharacter::Sprint(float Rate)
 {
-	if (FPlatformMisc::SupportsTouchInput() || GetDefault<UInputSettings>()->bUseMouseForTouch)
+	if(Rate >= 1.0f)
 	{
-		PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &ATheWitchTrialsCharacter::BeginTouch);
-		PlayerInputComponent->BindTouch(EInputEvent::IE_Released, this, &ATheWitchTrialsCharacter::EndTouch);
-
-		return true;
+		UE_LOG(LogTemp, Warning, TEXT("SPRINT"));
+		GetCharacterMovement()->MaxWalkSpeed = 1200.f;
+	}
+	else
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 600.f;
 	}
 	
-	return false;
+}
+
+void ATheWitchTrialsCharacter::StopJumping()
+{
+	JumpCurrentCount = 0;
 }

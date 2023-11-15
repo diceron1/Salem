@@ -32,3 +32,11 @@ void AEnemyAI::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
+//Handle Destruction
+void AEnemyAI::HandleDestruction()
+{
+	//Death Animation? VFX?
+	// Subtract 1 from the TheWitchTrialsGameMode enemy counter.
+	this->Destroy();
+}
+
