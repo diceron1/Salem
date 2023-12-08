@@ -5,12 +5,12 @@
 #include "UObject/ConstructorHelpers.h"
 #include "EnemyAI.h"
 #include "K2Node_SpawnActorFromClass.h"
+#include "SNegativeActionButton.h"
 #include "Algo/ForEach.h"
 #include "Kismet/GameplayStatics.h"
 
 
-ATheWitchTrialsGameMode::ATheWitchTrialsGameMode()
-	: Super()
+ATheWitchTrialsGameMode::ATheWitchTrialsGameMode(): Super()
 {
 	// set default pawn class to our Blueprinted character
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/FirstPerson/Blueprints/BP_FirstPersonCharacter"));
@@ -26,9 +26,10 @@ void ATheWitchTrialsGameMode::ActorDied(AActor* DeadActor)
 	}
 	else if(AEnemyAI* DeadEnemy = Cast<AEnemyAI>(DeadActor))
 	{
-		//ToDo DeadEnemy->HandleDestruction();
+		DeadEnemy->Destroy();
+		TargetEnemies = GetTargetEnemyCount();
 		TargetEnemies--;
-		if(TargetEnemies == 0)
+		if(TargetEnemies <= -1)
 		{
 			RoundWon(true);
 			SpawnEnemies();
@@ -60,7 +61,9 @@ void ATheWitchTrialsGameMode::SpawnEnemies()
 		
 		for(int i = 0; i < SpawnCount; i++)
 		{
-			GetWorld()->SpawnActor<AEnemyAI>(Location, FRotator(0.f));
+			//Get A Spawn point
+			GetASpawnPoint();
+			GetWorld()->SpawnActor<AEnemyAI>(EnemyBP, Location, FRotator(0.f));
 			UE_LOG(LogTemp, Warning, TEXT("ENEMY: /i"), i);
 		}
 		
@@ -70,7 +73,9 @@ void ATheWitchTrialsGameMode::SpawnEnemies()
 		SpawnCount = PreviousRoundEnemyStartCount + 3;
 		for(int i = 0; i < SpawnCount; i++)
 		{
-			GetWorld()->SpawnActor<Enemy>(Location, FRotator(0.f));
+			//Get A Spawn Point
+			GetASpawnPoint();
+			GetWorld()->SpawnActor<AEnemyAI>(EnemyBP, Location, FRotator(0.f));
 			UE_LOG(LogTemp, Warning, TEXT("ENEMY: /i"), i);
 		}
 	}
@@ -88,6 +93,11 @@ int ATheWitchTrialsGameMode::CalculateEnemyCount(int Enemies)
 	PreviousRoundEnemyStartCount = Enemies;
 
 	return Enemies;
+}
+
+void ATheWitchTrialsGameMode::SpawnSpot(FVector Spawn)
+{
+	Location = Spawn;
 }
 
 
