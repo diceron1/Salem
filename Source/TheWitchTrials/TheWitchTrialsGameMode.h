@@ -40,7 +40,7 @@ protected:
 	void GetASpawnPoint();
 
 	UPROPERTY(EditAnywhere, Category = "C++")
-	TSubclassOf<AEnemyAI> EnemyBP;
+	TSubclassOf<AActor> EnemyBPSpawn;
 	
 	int PreviousRoundEnemyStartCount = 0;
 
@@ -55,7 +55,7 @@ private:
 	void HandleGameStart();
 	void SpawnEnemies();
 
-	int SpawnCount = 3;
+	int SpawnCount = 13;
 	
 	int PreviousRound = 0;
 	FVector Location;

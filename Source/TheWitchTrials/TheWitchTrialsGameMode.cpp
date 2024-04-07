@@ -24,7 +24,7 @@ void ATheWitchTrialsGameMode::ActorDied(AActor* DeadActor)
 	{
 		RoundWon(false);
 	}
-	else if(AEnemyAI* DeadEnemy = Cast<AEnemyAI>(DeadActor))
+	else if(AActor* DeadEnemy = Cast<AActor>(DeadActor))
 	{
 		DeadEnemy->Destroy();
 		TargetEnemies = GetTargetEnemyCount();
@@ -63,19 +63,19 @@ void ATheWitchTrialsGameMode::SpawnEnemies()
 		{
 			//Get A Spawn point
 			GetASpawnPoint();
-			GetWorld()->SpawnActor<AEnemyAI>(EnemyBP, Location, FRotator(0.f));
+			GetWorld()->SpawnActor<AActor>(EnemyBPSpawn, Location, FRotator(0.f));
 			UE_LOG(LogTemp, Warning, TEXT("ENEMY: /i"), i);
 		}
 		
 	}
 	else
 	{
-		SpawnCount = PreviousRoundEnemyStartCount + 3;
+		
 		for(int i = 0; i < SpawnCount; i++)
 		{
 			//Get A Spawn Point
 			GetASpawnPoint();
-			GetWorld()->SpawnActor<AEnemyAI>(EnemyBP, Location, FRotator(0.f));
+			GetWorld()->SpawnActor<AEnemyAI>(EnemyBPSpawn, Location, FRotator(0.f));
 			UE_LOG(LogTemp, Warning, TEXT("ENEMY: /i"), i);
 		}
 	}
