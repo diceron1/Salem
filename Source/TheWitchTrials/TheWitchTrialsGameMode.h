@@ -39,6 +39,9 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent)
 	void GetASpawnPoint();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void DeathVFX(FVector VFXSpawn, FRotator VFXRotation);
+
 	UPROPERTY(EditAnywhere, Category = "C++")
 	TSubclassOf<AActor> EnemyBPSpawn;
 	

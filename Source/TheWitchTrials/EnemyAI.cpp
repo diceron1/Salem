@@ -36,7 +36,8 @@ void AEnemyAI::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 void AEnemyAI::HandleDestruction()
 {
 	//Death Animation? VFX?
+	UE_LOG(LogTemp, Warning, TEXT("C++ Handle Destruction"));
 	// Subtract 1 from the TheWitchTrialsGameMode enemy counter.
-	this->Destroy();
+	//this->Destroy();
 }
 

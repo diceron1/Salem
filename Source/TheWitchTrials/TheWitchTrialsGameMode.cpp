@@ -26,6 +26,7 @@ void ATheWitchTrialsGameMode::ActorDied(AActor* DeadActor)
 	}
 	else if(AActor* DeadEnemy = Cast<AActor>(DeadActor))
 	{
+		DeathVFX(DeadEnemy->GetActorLocation(), DeadEnemy->GetActorRotation());
 		DeadEnemy->Destroy();
 		TargetEnemies = GetTargetEnemyCount();
 		TargetEnemies--;
@@ -34,6 +35,7 @@ void ATheWitchTrialsGameMode::ActorDied(AActor* DeadActor)
 			RoundWon(true);
 			SpawnEnemies();
 		}
+		
 	}
 }
 

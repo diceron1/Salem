@@ -4,7 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
 #include "EnemyAI.generated.h"
+
 
 UCLASS()
 class THEWITCHTRIALS_API AEnemyAI : public ACharacter
@@ -20,6 +23,8 @@ protected:
 	virtual void BeginPlay() override;
 
 	void HandleDestruction();
+	
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
